@@ -1,0 +1,82 @@
+/* Ease theme switcher */
+
+body {
+  transition: all 500ms ease-in-out;
+}
+
+/* Position the theme toggle */
+
+.switch-theme {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+/* Hand emoji animation */
+
+.hand {
+  animation: tada 8s infinite;
+  width: fit-content;
+  display: inline-block;
+}
+
+.hand__emoji {
+  font-size: 50px;
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  1%,
+  2% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  3%,
+  5%,
+  7%,
+  9% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  4%,
+  6%,
+  8% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Golden gate hover */
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro:after {
+  content: '🌁';
+  opacity: 0;
+  top: -20px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.intro:hover:after {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 1s;
+  transition: all 0.5s;
+  font-size: 40px;
+  margin: 0 0 0 12px;
+}
