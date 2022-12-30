@@ -11,7 +11,7 @@
     "@emotion/core": "^10.0.28",
     "@mdx-js/mdx": "^1.6.5",
     "@mdx-js/react": "^1.6.5",
-    "gatsby": "^2.23.0",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-google-analytics": "^2.3.3",
     "gatsby-plugin-mdx": "^1.2.14",
     "gatsby-plugin-react-helmet": "^3.3.3",
